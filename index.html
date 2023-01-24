@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicommerce</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="author" content="Nicolas Martinez">
+    <link rel="icon" icon="image/x-icon" href="./img/icon.svg">
+</head>
+<body class="body-visible">
+    <div class="container">
+        <div class="default-buy-cart" id="buy-cart">
+            <div class="default-item-cart" id="item-cart">
+                <div class="top-cart">
+                    <img class="close-cart" src="./img/x.svg">
+                    <span class="text-cart">Carrito de compras</span>
+                </div>
+                <div class="products-info">
+                    <div class="buy-products">
+                        <div class="empty-products" id="empty-products">
+                            <span>No hay productos en el carrito de compra</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-cart">
+                    <div class="buy-info">
+                        <span class="total-text">TOTAL</span>
+                        <span class="price-text">0$</span>
+                    </div>
+                    <div class="finish-buy">
+                        <button class="finish-buy-button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="default-card-info" id="card-info">
+            <div class="default-all-info-card" id="all-info-card" data-id="1">
+                <img class="close-info" src="./img/x.svg">                
+            </div>
+        </div>
+
+        <section class="search">
+            <div>
+                <a class="title-span" href="./index.html">Nicommerce</a>
+            </div>
+            <div class="search-key">
+                <form action="#" method="" class="search-form" >
+                    <input class="search-input" type="text" placeholder="¿Que deseas buscar?">
+                    <input type="submit" class="search-button" value="">
+                </form>
+            </div>
+            <div class="shopping-cart">
+                <img class="cart" src="./img/shopping-cart.svg">
+                <span class="circle"> 0 </span>                  
+            </div>    
+        </section>
+
+        <div class="products-container">
+            <section class="products">
+                <div class="filter-products">
+                    <span class="category active" data-category="all products">
+                        Todas las categorias
+                    </span>
+                    <span class="category inactive" data-category="electronics"> 
+                        Electronica
+                    </span>
+                    <span class="category inactive" data-category="jewelery">
+                        Joyería
+                    </span>
+                    <span class="category inactive" data-category="men's clothing">
+                        Ropa de hombre
+                    </span>
+                    <span class="category inactive" data-category="women's clothing">
+                        Ropa de mujer
+                    </span>
+                </div>
+            </section>
+        </div>
+
+        <div class="success-add-cart-container">  
+        </div>
+        
+    </div>
+    <script src="./js/fetchProducts.js"></script>
+    <script src="./js/events.js"></script>
+</body>
+</html>
